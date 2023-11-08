@@ -114,6 +114,7 @@ a.active {
   background-color: #FFA500;
   margin: 0.2em;
   border-radius: 25px;
+  border: 4px solid #ffffff;
 }
 
 .containerbox a {
