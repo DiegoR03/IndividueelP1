@@ -1,13 +1,30 @@
 /* CSS Reset */
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
+/* Fonts */
+@font-face {
+  font-family: Infinity;
+  src: url(fonts/made_infinity/MADEINFINITYPersonalUse-Medium.otf)
+}
+
+@font-face {
+  font-family: LemonMilk;
+  src: url(fonts/lemon_milk/LEMONMILK-Bold.otf)
+}
+
+@font-face {
+  font-family: LouisGeorgeCafé;
+  src: url(fonts/louis_george_cafe/Louis\ George\ Cafe.ttf)
+}
+
+/* Body Make up */
 body {
-  background-color: #ffffff;
+  background-color: #e7e7e7;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -20,27 +37,51 @@ main {
 
 footer {
   background-color: #131931;
+  color: #ffffff;
   width: 100%;
+}
+
+/* Text make up */
+h1{
+  font-family: LemonMilk;
+}
+
+h2,h4{
+  padding: 1em;
+  font-family: Infinity;
+}
+
+p{
+  font-family: LouisGeorgeCafé;
+}
+
+/* Navigation make up */
+nav {
+  display: flex;
+  justify-content:space-evenly;
+}
+
+/* Button make up */
+nav a{
+  background-color:#FFC04D;
+}
+
+/* Image Size */
+nav img{
+  margin-top: 2px;
+  height: 1.7em;
+  width: 1.7em;
 }
 
 /* Style of buttons */
 a {
-  color: #f2f2f2;
-  background-color:#FFC04D;
+  color: #000000;
   text-align: center;
   padding: 10px 12px;
   text-decoration: none;
-  font-size: 22px;
   transition: all 500ms ease;
   display: inline-block;
-  align-items: center;
-  justify-content: left;
-}
-
-/* Change the color on hover of the button */
-a:hover {
-  background-color: #ddd;
-  color: black;
+  border-radius: 25px;
 }
   
 /* Add a color to the current page button */
@@ -70,28 +111,29 @@ a.active {
   justify-content: left;
   width: 100%;
   padding: 10px;
-  border: 3px solid gray;
-  background-color: gray;
+  background-color: #FFA500;
   margin: 0.2em;
-  transition: transform .2s;
+  border-radius: 25px;
 }
 
-.containerbox a:hover {
-  transform: scale(1.055);
+.containerbox a {
+  height: 2em;
+  padding-bottom: 30px;
+  margin: 20px;
+  background-color:#FFC04D;
 }
 
 .containerbox img {
-    width: 5em;
+  width: 7em;
+  height: auto;
+  border-radius: 25px;
+  border: 6px solid #ffffff;
 }
 
-.containerbox p {
-  font-size: 15px;
+.containerbox p, h2{
+  font-size: 16px;
   padding-left: 20px;
-}
-
-.containerbox h2 {
-  font-size: 17px;
-  padding-left: 20px;
+  padding-right: 20px;
 }
 
 /* Puts the info boxes in order */
@@ -103,10 +145,10 @@ a.active {
   flex-wrap: wrap;
 }
 
-/* Hero Homepage Styling, credit https://www.shecodes.io/athena/11902-creating-homepage-hero-with-html-and-css */
+/* Hero Banners on the top of each page */
 .hero {
   background-image: url('images/BlurredHeroImage.png');
-  height: 15vw;
+  height: 25vw;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -115,14 +157,7 @@ a.active {
   text-align: center;
 }
 
-/* Styling for the H1 element within the Hero */
-.h1hero {
-  font-size: 3rem;
-  background-color: transparent;
-  margin-bottom: 20px;
-}
-
-/* Styling for the Paragraph element within the Hero */
+/* Styling for the Image element within the Hero */
 .hero img {
   height: auto;
   width: auto;
