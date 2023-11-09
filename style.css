@@ -73,6 +73,16 @@ nav img{
   width: 1.7em;
 }
 
+ul {
+  list-style: none;
+}
+
+li img{
+  height: auto;
+  width: 95%;
+  border-radius: 25px;
+}
+
 /* Style of buttons */
 a {
   color: #000000;
@@ -128,7 +138,7 @@ a.active {
   width: 7em;
   height: auto;
   border-radius: 25px;
-  border: 6px solid #ffffff;
+  border: 2px solid #ffffff;
 }
 
 .containerbox p, h2{
@@ -146,6 +156,9 @@ a.active {
   flex-wrap: wrap;
 }
 
+.containerorder p {
+  padding-bottom: 20px;
+}
 /* Hero Banners on the top of each page */
 .hero {
   background-image: url('images/BlurredHeroImage.png');
